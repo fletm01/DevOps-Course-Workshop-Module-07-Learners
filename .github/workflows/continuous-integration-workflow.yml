@@ -9,5 +9,5 @@ jobs:
     - uses: actions/checkout@v4
 
 
-    - name: Hello world       # Name of step
-      run: echo 'Hello world' # Command to run
+    - name: build C# code # Name of step
+      run: dotnet build # Command to run
