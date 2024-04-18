@@ -11,3 +11,13 @@ jobs:
 
     - name: build C# code # Name of step
       run: dotnet build # Command to run
+
+    - name: install npm 
+      working-directory: DotnetTemplate.Web
+      run: npm install
+
+    - name: build TypeScript code
+      run: npm run build
+
+    - name: test C# code
+      run: dotnet test   
